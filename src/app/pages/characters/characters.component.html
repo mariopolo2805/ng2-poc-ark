@@ -1,0 +1,8 @@
+<p>characters works!</p>
+
+<app-loader *ngIf="characterList.length === 0"></app-loader>
+<ul>
+  <li *ngFor="let item of characterList">
+    <p>{{ item.name }}</p>
+  </li>
+</ul>

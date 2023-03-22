@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="radio-wrapper">
+    <p class="correct"><i class="ion-checkmark-round"></i>
+    </p>
+    <p class="neutral-icon"><i class="ion-record"></i>
+    </p>
+    <p class="wrong"><i class="ion-close-round"></i></p>
+    <input id="radio-yes" type="radio" name="event" class="yes" [ngClass]="{'checked': state === 'on'}" [(ngModel)]="state" (change)="handleChange('on')" />
+    <label for="radio-yes"></label>
+
+    <input id="radio-neutral" type="radio" name="event" class="neutral" [ngClass]="{'checked': state === 'neutral'}" [(ngModel)]="state" (change)="handleChange('neutral')" />
+    <label for="radio-neutral"></label>
+
+    <input id="radio-no" type="radio" name="event" class="no" [ngClass]="{'checked': state === 'off'}" [(ngModel)]="state" (change)="handleChange('off')"/>
+    <label for="radio-no"></label>
+  </div>
+  {{ state }}
+</div>

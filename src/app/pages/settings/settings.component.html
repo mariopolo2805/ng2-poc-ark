@@ -1,0 +1,7 @@
+<p>settings works!</p>
+
+{{ stateService.state }}
+
+<app-switch [state]="stateService.state" (stateChange)="handleStateChange($event)"></app-switch>
+
+<span>{{ '121212121212121212' | iban }}</span>

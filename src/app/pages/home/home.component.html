@@ -1,0 +1,7 @@
+<p>home works!</p>
+
+{{ stateService.state }}
+
+<app-switch [state]="stateService.state" (stateChange)="handleStateChange($event)"></app-switch>
+
+<app-loader></app-loader>

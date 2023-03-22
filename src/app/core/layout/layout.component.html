@@ -1,0 +1,11 @@
+<header>
+  <h1>{{ 'HEADER.TITLE' | translate }}</h1>
+  <a class="m-5" [routerLink]="['/home']" routerLinkActive="router-link-active">Home</a>
+  <a class="m-5" [routerLink]="['/settings']" routerLinkActive="router-link-active">Settings</a>
+  <a class="m-5" [routerLink]="['/other']" routerLinkActive="router-link-active">Other</a>
+  <a class="m-5" [routerLink]="['/characters']" routerLinkActive="router-link-active">Characters</a>
+</header>
+<main>
+  <router-outlet></router-outlet>
+</main>
+<footer>Footer</footer>
